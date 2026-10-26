@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #e8f0f4;
+    background-image: url("campus.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 20px 12px;
+    border-radius: 0 0 10px 10px;
+}
+
+header h1 {
+    margin: 0 0 18px;
+    color: #087e8b;
+    font-size: 32px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px 12px;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #087e8b;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 35px 15px;
+}
+
+.registration-card {
+    width: 100%;
+    max-width: 440px;
+    padding: 28px 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.registration-card h2 {
+    text-align: center;
+    font-size: 26px;
+    margin: 0 0 12px;
+}
+
+.description {
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 17px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    background-color: #f5f7f8;
+    font-size: 14px;
+}
+
+form input:focus,
+form select:focus {
+    outline: 2px solid #087e8b;
+    border-color: #087e8b;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #087e8b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #06636d;
+}
+
+.account-link {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.account-link a {
+    color: #087e8b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.account-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 22px 12px;
+    }
+
+    .registration-card {
+        padding: 22px 18px;
+    }
+
+    .registration-card h2 {
+        font-size: 23px;
+    }
+}
